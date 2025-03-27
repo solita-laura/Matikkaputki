@@ -14,8 +14,10 @@ jobs:
      uses: actions/setup-dotnet@v3
      with:
        dotnet-version: '8.0.x'
-   - name: Run restore
+   - name: Restore
      run: dotnet restore
-   - name: build dotnet
+   - name: Build
      run: dotnet build
+   - name: Run unit tests
+     run: dotnet test
     
