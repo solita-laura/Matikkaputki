@@ -1,7 +1,6 @@
-using MathLib;
-using Xunit;
+using MathWorkshop;
 
-namespace MathLib.Tests;
+namespace UnitTests;
 
 public class CalculatorTests
 {
@@ -26,6 +25,6 @@ public class CalculatorTests
     [Fact]
     public void Divide_ByZero_ThrowsException()
     {
-        Assert.Throws<DivideByZeroException>(() => Calculator.Divide(10, 0));
+        Assert.Throws<ArgumentException>(() => Calculator.Divide(10, 0));
     }
 }
