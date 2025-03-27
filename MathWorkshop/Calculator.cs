@@ -8,7 +8,7 @@ public class Calculator
 
     public static int Divide(int a, int b)
     {
-        //if (b == 0) throw new ArgumentException("Cannot divide by zero.");
+        if (b == 0) throw new ArgumentException("Cannot divide by zero.");
         return a / b;
     }
 }
